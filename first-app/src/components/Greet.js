@@ -6,14 +6,27 @@ import React from "react";
 
 // use arrow function for same thing
 
-const Greet = (props) => {
-  console.log(props);
+// const Greet = (props) => {
+//   console.log(props);
+//   return (
+//     <div>
+//       <h1>
+//         Hello {props.name} a.k.a {props.heroName}
+//       </h1>
+//       {props.children}
+//     </div>
+//   );
+// };
+
+//destructure props
+
+const Greet = ({ name, heroName, children }) => {
   return (
     <div>
       <h1>
-        Hello {props.name} a.k.a {props.heroName}
+        Hello {name} a.k.a {heroName}
       </h1>
-      {props.children}
+      {children}
     </div>
   );
 };
