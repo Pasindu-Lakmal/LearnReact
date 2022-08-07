@@ -1,7 +1,14 @@
 import React from "react";
 
 function FunctionClick() {
-  return <div>FunctionClick</div>;
+  function clickHandler() {
+    console.log("Button click");
+  }
+  return (
+    <div>
+      <button onClick={clickHandler}>Click</button>
+    </div>
+  );
 }
 
 export default FunctionClick;
